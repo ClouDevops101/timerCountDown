@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4EBC742B228AED0A005C15CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBC742A228AED0A005C15CC /* AppDelegate.swift */; };
+		4EBC742D228AED0A005C15CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBC742C228AED0A005C15CC /* ViewController.swift */; };
+		4EBC742F228AED0B005C15CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EBC742E228AED0B005C15CC /* Assets.xcassets */; };
+		4EBC7432228AED0B005C15CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EBC7430228AED0B005C15CC /* Main.storyboard */; };
+		4EBC743E228AED0B005C15CC /* timercountdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBC743D228AED0B005C15CC /* timercountdownTests.swift */; };
+		4EBC7449228AED0B005C15CC /* timercountdownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBC7448228AED0B005C15CC /* timercountdownUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4EBC743A228AED0B005C15CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EBC741F228AED0A005C15CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EBC7426228AED0A005C15CC;
+			remoteInfo = timercountdown;
+		};
+		4EBC7445228AED0B005C15CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EBC741F228AED0A005C15CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EBC7426228AED0A005C15CC;
+			remoteInfo = timercountdown;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4EBC7427228AED0A005C15CC /* timercountdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timercountdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EBC742A228AED0A005C15CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4EBC742C228AED0A005C15CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4EBC742E228AED0B005C15CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4EBC7431228AED0B005C15CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4EBC7433228AED0B005C15CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EBC7434228AED0B005C15CC /* timercountdown.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = timercountdown.entitlements; sourceTree = "<group>"; };
+		4EBC7439228AED0B005C15CC /* timercountdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = timercountdownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EBC743D228AED0B005C15CC /* timercountdownTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timercountdownTests.swift; sourceTree = "<group>"; };
+		4EBC743F228AED0B005C15CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EBC7444228AED0B005C15CC /* timercountdownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = timercountdownUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EBC7448228AED0B005C15CC /* timercountdownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timercountdownUITests.swift; sourceTree = "<group>"; };
+		4EBC744A228AED0B005C15CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4EBC7424228AED0A005C15CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EBC7436228AED0B005C15CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EBC7441228AED0B005C15CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EBC741E228AED0A005C15CC = {
+			isa = PBXGroup;
+			children = (
+				4EBC7429228AED0A005C15CC /* timercountdown */,
+				4EBC743C228AED0B005C15CC /* timercountdownTests */,
+				4EBC7447228AED0B005C15CC /* timercountdownUITests */,
+				4EBC7428228AED0A005C15CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4EBC7428228AED0A005C15CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EBC7427228AED0A005C15CC /* timercountdown.app */,
+				4EBC7439228AED0B005C15CC /* timercountdownTests.xctest */,
+				4EBC7444228AED0B005C15CC /* timercountdownUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EBC7429228AED0A005C15CC /* timercountdown */ = {
+			isa = PBXGroup;
+			children = (
+				4EBC742A228AED0A005C15CC /* AppDelegate.swift */,
+				4EBC742C228AED0A005C15CC /* ViewController.swift */,
+				4EBC742E228AED0B005C15CC /* Assets.xcassets */,
+				4EBC7430228AED0B005C15CC /* Main.storyboard */,
+				4EBC7433228AED0B005C15CC /* Info.plist */,
+				4EBC7434228AED0B005C15CC /* timercountdown.entitlements */,
+			);
+			path = timercountdown;
+			sourceTree = "<group>";
+		};
+		4EBC743C228AED0B005C15CC /* timercountdownTests */ = {
+			isa = PBXGroup;
+			children = (
+				4EBC743D228AED0B005C15CC /* timercountdownTests.swift */,
+				4EBC743F228AED0B005C15CC /* Info.plist */,
+			);
+			path = timercountdownTests;
+			sourceTree = "<group>";
+		};
+		4EBC7447228AED0B005C15CC /* timercountdownUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4EBC7448228AED0B005C15CC /* timercountdownUITests.swift */,
+				4EBC744A228AED0B005C15CC /* Info.plist */,
+			);
+			path = timercountdownUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4EBC7426228AED0A005C15CC /* timercountdown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EBC744D228AED0B005C15CC /* Build configuration list for PBXNativeTarget "timercountdown" */;
+			buildPhases = (
+				4EBC7423228AED0A005C15CC /* Sources */,
+				4EBC7424228AED0A005C15CC /* Frameworks */,
+				4EBC7425228AED0A005C15CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = timercountdown;
+			productName = timercountdown;
+			productReference = 4EBC7427228AED0A005C15CC /* timercountdown.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4EBC7438228AED0B005C15CC /* timercountdownTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EBC7450228AED0B005C15CC /* Build configuration list for PBXNativeTarget "timercountdownTests" */;
+			buildPhases = (
+				4EBC7435228AED0B005C15CC /* Sources */,
+				4EBC7436228AED0B005C15CC /* Frameworks */,
+				4EBC7437228AED0B005C15CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EBC743B228AED0B005C15CC /* PBXTargetDependency */,
+			);
+			name = timercountdownTests;
+			productName = timercountdownTests;
+			productReference = 4EBC7439228AED0B005C15CC /* timercountdownTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4EBC7443228AED0B005C15CC /* timercountdownUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EBC7453228AED0B005C15CC /* Build configuration list for PBXNativeTarget "timercountdownUITests" */;
+			buildPhases = (
+				4EBC7440228AED0B005C15CC /* Sources */,
+				4EBC7441228AED0B005C15CC /* Frameworks */,
+				4EBC7442228AED0B005C15CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EBC7446228AED0B005C15CC /* PBXTargetDependency */,
+			);
+			name = timercountdownUITests;
+			productName = timercountdownUITests;
+			productReference = 4EBC7444228AED0B005C15CC /* timercountdownUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EBC741F228AED0A005C15CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Abdelilah Heddar";
+				TargetAttributes = {
+					4EBC7426228AED0A005C15CC = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					4EBC7438228AED0B005C15CC = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 4EBC7426228AED0A005C15CC;
+					};
+					4EBC7443228AED0B005C15CC = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 4EBC7426228AED0A005C15CC;
+					};
+				};
+			};
+			buildConfigurationList = 4EBC7422228AED0A005C15CC /* Build configuration list for PBXProject "timercountdown" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4EBC741E228AED0A005C15CC;
+			productRefGroup = 4EBC7428228AED0A005C15CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4EBC7426228AED0A005C15CC /* timercountdown */,
+				4EBC7438228AED0B005C15CC /* timercountdownTests */,
+				4EBC7443228AED0B005C15CC /* timercountdownUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4EBC7425228AED0A005C15CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EBC742F228AED0B005C15CC /* Assets.xcassets in Resources */,
+				4EBC7432228AED0B005C15CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EBC7437228AED0B005C15CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EBC7442228AED0B005C15CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4EBC7423228AED0A005C15CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EBC742D228AED0A005C15CC /* ViewController.swift in Sources */,
+				4EBC742B228AED0A005C15CC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EBC7435228AED0B005C15CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EBC743E228AED0B005C15CC /* timercountdownTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EBC7440228AED0B005C15CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EBC7449228AED0B005C15CC /* timercountdownUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EBC743B228AED0B005C15CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EBC7426228AED0A005C15CC /* timercountdown */;
+			targetProxy = 4EBC743A228AED0B005C15CC /* PBXContainerItemProxy */;
+		};
+		4EBC7446228AED0B005C15CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EBC7426228AED0A005C15CC /* timercountdown */;
+			targetProxy = 4EBC7445228AED0B005C15CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4EBC7430228AED0B005C15CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4EBC7431228AED0B005C15CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4EBC744B228AED0B005C15CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4EBC744C228AED0B005C15CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4EBC744E228AED0B005C15CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = timercountdown/timercountdown.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FKP64L947R;
+				INFOPLIST_FILE = timercountdown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Architects.timercountdown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4EBC744F228AED0B005C15CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = timercountdown/timercountdown.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FKP64L947R;
+				INFOPLIST_FILE = timercountdown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Architects.timercountdown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4EBC7451228AED0B005C15CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FKP64L947R;
+				INFOPLIST_FILE = timercountdownTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Architects.timercountdownTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/timercountdown.app/Contents/MacOS/timercountdown";
+			};
+			name = Debug;
+		};
+		4EBC7452228AED0B005C15CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FKP64L947R;
+				INFOPLIST_FILE = timercountdownTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Architects.timercountdownTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/timercountdown.app/Contents/MacOS/timercountdown";
+			};
+			name = Release;
+		};
+		4EBC7454228AED0B005C15CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FKP64L947R;
+				INFOPLIST_FILE = timercountdownUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Architects.timercountdownUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = timercountdown;
+			};
+			name = Debug;
+		};
+		4EBC7455228AED0B005C15CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FKP64L947R;
+				INFOPLIST_FILE = timercountdownUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Architects.timercountdownUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = timercountdown;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4EBC7422228AED0A005C15CC /* Build configuration list for PBXProject "timercountdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EBC744B228AED0B005C15CC /* Debug */,
+				4EBC744C228AED0B005C15CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EBC744D228AED0B005C15CC /* Build configuration list for PBXNativeTarget "timercountdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EBC744E228AED0B005C15CC /* Debug */,
+				4EBC744F228AED0B005C15CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EBC7450228AED0B005C15CC /* Build configuration list for PBXNativeTarget "timercountdownTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EBC7451228AED0B005C15CC /* Debug */,
+				4EBC7452228AED0B005C15CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EBC7453228AED0B005C15CC /* Build configuration list for PBXNativeTarget "timercountdownUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EBC7454228AED0B005C15CC /* Debug */,
+				4EBC7455228AED0B005C15CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4EBC741F228AED0A005C15CC /* Project object */;
+}
