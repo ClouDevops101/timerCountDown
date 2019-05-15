@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E0C64DF228C047A00EBA4CB /* turkey.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E0C64DE228C047A00EBA4CB /* turkey.png */; };
+		4E0C64E1228C047F00EBA4CB /* time-background-dark-blue-background-with-digital-clock_b72tac2__F0000.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E0C64E0228C047F00EBA4CB /* time-background-dark-blue-background-with-digital-clock_b72tac2__F0000.png */; };
 		4EBC742B228AED0A005C15CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBC742A228AED0A005C15CC /* AppDelegate.swift */; };
 		4EBC742D228AED0A005C15CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBC742C228AED0A005C15CC /* ViewController.swift */; };
 		4EBC742F228AED0B005C15CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EBC742E228AED0B005C15CC /* Assets.xcassets */; };
@@ -33,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E0C64DE228C047A00EBA4CB /* turkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turkey.png; sourceTree = SOURCE_ROOT; };
+		4E0C64E0228C047F00EBA4CB /* time-background-dark-blue-background-with-digital-clock_b72tac2__F0000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "time-background-dark-blue-background-with-digital-clock_b72tac2__F0000.png"; sourceTree = SOURCE_ROOT; };
 		4EBC7427228AED0A005C15CC /* timercountdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timercountdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EBC742A228AED0A005C15CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EBC742C228AED0A005C15CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 				4EBC742A228AED0A005C15CC /* AppDelegate.swift */,
 				4EBC742C228AED0A005C15CC /* ViewController.swift */,
 				4EBC742E228AED0B005C15CC /* Assets.xcassets */,
+				4E0C64DE228C047A00EBA4CB /* turkey.png */,
+				4E0C64E0228C047F00EBA4CB /* time-background-dark-blue-background-with-digital-clock_b72tac2__F0000.png */,
 				4EBC7430228AED0B005C15CC /* Main.storyboard */,
 				4EBC7433228AED0B005C15CC /* Info.plist */,
 				4EBC7434228AED0B005C15CC /* timercountdown.entitlements */,
@@ -230,6 +236,8 @@
 			files = (
 				4EBC742F228AED0B005C15CC /* Assets.xcassets in Resources */,
 				4EBC7432228AED0B005C15CC /* Main.storyboard in Resources */,
+				4E0C64DF228C047A00EBA4CB /* turkey.png in Resources */,
+				4E0C64E1228C047F00EBA4CB /* time-background-dark-blue-background-with-digital-clock_b72tac2__F0000.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

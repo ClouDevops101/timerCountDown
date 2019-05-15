@@ -684,7 +684,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="TimerCountDown" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -706,70 +706,88 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="timercountdown" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="472" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OKD-Vf-Klr">
-                                <rect key="frame" x="73" y="55" width="70" height="32"/>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cAJ-xM-y2S">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Start" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="86X-lR-gU8">
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="time-background-dark-blue-background-with-digital-clock_b72tac2__F0000" id="ewM-9U-9wL"/>
+                            </imageView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OKD-Vf-Klr">
+                                <rect key="frame" x="32" y="77" width="58" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="Start" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="86X-lR-gU8">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <color key="contentTintColor" red="0.0745244100689888" green="0.75872963666915894" blue="0.93026930093765259" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="StartButtonTapped:" target="XfG-lQ-9wD" id="9Sd-p8-OfK"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ctF-V6-feI">
-                                <rect key="frame" x="202" y="55" width="77" height="32"/>
+                                <rect key="frame" x="137" y="42" width="65" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Pause" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="98j-NF-pYI">
+                                <buttonCell key="cell" type="bevel" title="Pause" bezelStyle="rounded" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="98j-NF-pYI">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <color key="contentTintColor" red="0.10172124952077866" green="0.75300264358520508" blue="0.99880844354629517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="pauseButtonTapped:" target="XfG-lQ-9wD" id="dsc-B0-u84"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Ze-ac-sHy">
-                                <rect key="frame" x="334" y="55" width="75" height="32"/>
+                                <rect key="frame" x="257" y="56" width="63" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Reset" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="lfw-W0-IBQ">
+                                <buttonCell key="cell" type="bevel" title="Reset" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="lfw-W0-IBQ">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <color key="contentTintColor" red="0.0745244100689888" green="0.75872963666915894" blue="0.93026930093765259" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="resetButtonTapped:" target="XfG-lQ-9wD" id="b1g-mZ-eOR"/>
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IBO-8k-aqf">
-                                <rect key="frame" x="58" y="116" width="378" height="134"/>
+                                <rect key="frame" x="24" y="85" width="378" height="134"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="00:00:00" id="mAK-fJ-baC">
-                                    <font key="font" size="78" name="Krungthep"/>
-                                    <color key="textColor" red="0.6322538860103627" green="0.6322538860103627" blue="0.6322538860103627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="font" size="61" name="Krungthep"/>
+                                    <color key="textColor" red="0.0745244100689888" green="0.75872963666915894" blue="0.93026930093765259" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nxx-Ca-KbU">
-                                <rect key="frame" x="364" y="9" width="50" height="22"/>
+                                <rect key="frame" x="406" y="153" width="45" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="hours.." drawsBackground="YES" id="Ojc-8a-F2P">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="1" drawsBackground="YES" id="Ojc-8a-F2P">
                                     <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" red="0.06705976277589798" green="0.055646531283855438" blue="0.0015611891867592931" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textFieldCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" name="systemPurpleColor" catalog="System" colorSpace="catalog"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="break" destination="ctF-V6-feI" id="xnb-Yx-2Gm"/>
                         <outlet property="numberOfHours" destination="nxx-Ca-KbU" id="Hd6-0O-r6N"/>
                         <outlet property="timerLabel" destination="IBO-8k-aqf" id="d5o-HU-iAC"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <imageCell refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="time-background-dark-blue-background-with-digital-clock_b72tac2__F0000" id="Xvj-dr-5Qu"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="71" y="655"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="time-background-dark-blue-background-with-digital-clock_b72tac2__F0000" width="1920" height="1080"/>
+    </resources>
 </document>
