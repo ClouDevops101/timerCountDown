@@ -57,6 +57,7 @@ this is a part of the MVC specification. the runTimer should be the Model, and w
 
 ### bugfix tree : a negatif acount 
 ![TimerCountDownApp](negativecount.png)
+
 Since the updateTimer is doing a simple decrement. it's easy to run in a negative value after reaching the zero value.
 So a small if statement was more that necessary 
 ```swift
