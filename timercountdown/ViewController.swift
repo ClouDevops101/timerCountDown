@@ -107,8 +107,7 @@ class ViewController: NSViewController {
     @objc func updateTimer() {
         if seconds != 0 {
             seconds -= 1
-        }
-        else if seconds == 0 {
+        } else if seconds == 0 {
             timer.invalidate()
             let answer = dialogOKCancel(question: "TIME IS UP?", text: "Hurry up")
             
