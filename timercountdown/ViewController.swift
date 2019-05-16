@@ -42,7 +42,7 @@ class ViewController: NSViewController {
         }
         //let hoursString = hours.trimmingCharacters(in: .whitespaces)
         //let hoursString = hours.removingWhitespaces()
-        seconds = 3600 * Int(hours)!
+        seconds = 5 * Int(hours)!
         if self.isTimerRunning == false {
             
             runTimer()

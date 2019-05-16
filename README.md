@@ -5,60 +5,77 @@
 # A macOS x app to countdown seconds from a giving number of hours
 
 ![TimerCountDownApp](appscreeshot.png)
-Description : vRA-deploy-VM is a playbook that use ansible uri core module to request a VM from vRealize automation solution, the Vmware Cloud Automation Center (vCAC)
-This script is built to be run from a jenkins slave with a minmal installation in order to create an ephemeral deployement machine to deploy test and destroy the machines after testing. 
+
+Description 
+================
+TimerCountDown a small application that countdown time in seconds, an application that initiate me to swift and MacOs X Cocoa application.
 
 HOW It WORKS
 ================
-vRA-deploy-VM is a playbook that use ansible uri core module to request a VM from vRealize automation solution, the vmware cloud.
-This script can either be played form jenkins with ansible or in adhoc mode.
 
-requierement : ** A valid vRA account able to create/destroy machines **
+The application has many features, the deal is to avoid bugs and make sure that bugs never happens. when designing an user interactive application
+A serie of bugs was avoided so far
+### Bugfix : non digit User Input  :
+The user edit the text zone and issue characters that are suppose to be digit.
+a protection against filling no digit caracters including space has been added.
 
-As you can see there is two main role file : 
+```swift
+extension String {
+    // detect if string holds numbers
+    var isNumber: Bool {
+        let characters = CharacterSet.decimalDigits.inverted
+        return !self.isEmpty && rangeOfCharacter(from: characters) == nil
+    }
+    // clean white space
+    func removingWhitespaces() -> String {
+        return components(separatedBy: .whitespaces).joined()
+    }
+}
 
-## vRA-deploy-VM.yml :
-This file is used to request a VM to vRealize Automation it will play a full mimed json request to ask ressource from vcloud and then get ip and hostname.
-Please store user and password in a separate yml vault file
-
-### HOW to use it 
-```
-ansible-playbook vRA-deploy-VM.yml --ask-vault-pass 
-```
-
-###### Input : 
-   ```
-   VRA_HOST: {{ VRA_HOST}}
-   VRA_USER: {{ VRA_USER }}
-   VRA_PASS: {{ VRA_PASS }}
-   VRA_TENANT: {{ VRA_TENANT }}
-   ```
-
-###### Output :
-  ```
-  VM_Destroy_id="{{ list.json.content[item].id }}" 
-  VM_name="{{ list.json.content[item].name }}"  
-  VM_IP="{{ list.json.content[item].resourceData }}
- ```
-
-## vRA-destroy-VM.yml : 
-
-### HOW to use it 
-```
-ansible-playbook vRA-destroy-VM.yml --ask-vault-pass 
 ```
 
-###### Input : 
-   ```
-   VRA_HOST: {{ VRA_HOST}}
-   VRA_USER: {{ VRA_USER }}
-   VRA_PASS: {{ VRA_PASS }}
-   VRA_TENANT: {{ VRA_TENANT }}
-   {{  DESTROY_ID  }}
-   ```
-###### Output :
-  NONE
+### Bugfix two  : Empty User Input  :
+A default value was added in case of leaving the text box empty.
+
+```swift
+if hours.isEmpty || !hours.isNumber {
+            hours = "1"
+        }
+```
+
+### Bugfix two  : Click twice on start button  :
+while tapping one time on start button run one counter, a second click on the button make runing a second time count that has as effect to randomly 
+downcount in less that seconds. to fix this behaviour i added a varriable that hold the state of the counter. so 
+
+```swift
+var isTimerRunning = false
+```
+#MVC MVC and MVC
+I make a choice to have an MVC implementation where the function runTimer() never embeed a condition inside. so the condition is ported to the button that trigger the runTimer.
+this is a part of the MVC specification. the runTimer should be the Model, and we only interact on the view.
 
 
+### bugfix tree : a negatif acount 
+![TimerCountDownApp](negativecount.png)
+Since the updateTimer is doing a simple decrement. it's easy to run in a negative value after reaching the zero value.
+So a small if statement was more that necessary 
+```swift
+if seconds != 0 {
+            seconds -= 1
+        }
+```
 
-
+### bugfix : Pause button stop working 
+i got a surprise will using the pause button, this one was acting misteriously, like stop working after tree consecutive clicks, hanging after tapping the Reset button 
+i decided to limit the button functionality to two basic cases : 
+Pause the clock when the clock is runing : 
+```swift
+ if self.resumeTapped == false && self.isTimerRunning == true {
+            timer.invalidate()
+```
+Resume the clock if the clock is not runing and the Pause button was already tapped :
+```swift
+ } else if self.resumeTapped == true && self.isTimerRunning == false {
+          runTimer()
+          
+```
