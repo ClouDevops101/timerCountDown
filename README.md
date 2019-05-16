@@ -1,4 +1,4 @@
-<a href="http://bitly.com/2grT54q"><img src="https://cdn.codementor.io/badges/i_am_a_codementor_dark.svg" alt="I am a codementor" style="max-width:100%"/></a><img src="https://github.com/LinuxArchitects/timerCountDown/blob/master/countdown-128-128.png" height="50"><img src="https://banner2.kisspng.com/20180406/ziq/kisspng-swift-apple-programming-language-xcode-books-5ac740913df8c6.3535820715230076332539.jpg" height="50"> 
+<a href="http://bitly.com/2grT54q"><img src="https://cdn.codementor.io/badges/i_am_a_codementor_dark.svg" alt="I am a codementor" style="max-width:100%"/></a><img src="https://github.com/LinuxArchitects/timerCountDown/blob/master/countdown-128-128.png" height="50"><img src="https://ironion.com/wp-content/uploads/2015/06/swift.png" height="50"> 
  [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/HAAW)
 
 
